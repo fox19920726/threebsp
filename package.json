@@ -1,10 +1,13 @@
 {
   "name": "tthreebsp",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "http://192.168.150.186:11111/repository/npm-internal/"
   },
   "author": "Jin",
   "license": "ISC"

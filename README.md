@@ -1,7 +1,7 @@
 ##模块化ThreeBSP包
 
 
-###用法
+###Vue中的用法（react暂时不做示例）
 
 必须在前面先引入THREE包
 ```sh
@@ -14,6 +14,23 @@ const ThreeBSP = require('tthreebsp')(THREE)
 ```
 
 ###案例
+
+createMesh方法
+```sh
+createMesh(geom) {
+  //  创建一个线框纹理
+  const wireFrameMat = new THREE.MeshBasicMaterial({
+    opacity: 0.5,
+    wireframeLinewidth: 0.5
+  });
+  wireFrameMat.wireframe = true;
+
+  // 创建模型
+  const mesh = new THREE.Mesh(geom, wireFrameMat);
+
+  return mesh;
+}
+```
 
 创建球形几何体
 ```sh
@@ -37,6 +54,7 @@ const cubeBSP = new ThreeBSP(cube)
 ```
 
 以下计算方式取其一即可
+
 进行差集计算（使用该函数可以在第一个几何体中移除两个几何体重叠的部分来创建新的几何体。）
 ```sh
 const resultBSP = sphereBSP.subtract(cubeBSP)
