@@ -1,14 +1,16 @@
 {
   "name": "tthreebsp",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "publishConfig": {
-    "registry": "http://192.168.150.186:11111/repository/npm-internal/"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fox19920726/threebsp"
   },
+
   "author": "Jin",
-  "license": "ISC"
+  "license": "MIT"
 }
