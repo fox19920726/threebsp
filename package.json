@@ -1,6 +1,6 @@
 {
   "name": "tthreebsp",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/fox19920726/threebsp"
   },
-
   "author": "Jin",
   "license": "MIT"
 }
